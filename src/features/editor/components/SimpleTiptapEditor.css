@@ -1,0 +1,16 @@
+/* SimpleTiptapEditor Placeholder 样式 */
+
+.simple-editor-wrapper {
+  width: 100%;
+}
+
+/* 空编辑器时的 placeholder 样式 */
+.simple-editor-wrapper .ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+  color: hsl(var(--muted-foreground)) !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+}
